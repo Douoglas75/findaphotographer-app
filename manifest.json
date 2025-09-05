@@ -1,0 +1,24 @@
+{
+  "short_name": "Findaphotographer",
+  "name": "Findaphotographer",
+  "description": "Une application premium qui met en relation des modèles photo avec des photographes et vidéastes grâce à la géolocalisation.",
+  "icons": [
+    {
+      "src": "/assets/icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0D1117",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#0D1117"
+}

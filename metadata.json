@@ -1,0 +1,9 @@
+{
+  "name": "Findaphotographer",
+  "description": "Une application premium qui met en relation des modèles photo avec des photographes et vidéastes grâce à la géolocalisation. Inclut messagerie, réservation et un quiz photo.",
+  "requestFramePermissions": [
+    "geolocation",
+    "camera",
+    "microphone"
+  ]
+}
