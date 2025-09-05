@@ -62,9 +62,12 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             </aside>
 
             {/* Main content area */}
-            <div className="flex flex-col h-full relative">
-                <main className="flex-1 overflow-y-auto">
-                    <div key={activeTab} className="animate-fade-in-fast">
+            <div className="h-full flex flex-col relative">
+                {/* Main grows to fill available space and acts as a positioning context for its child. */}
+                <main className="flex-1 relative">
+                    {/* This child div now fills its parent (`main`) completely and handles its own scrolling. */}
+                    {/* This ensures that children needing a defined height (like the map) get one, while long content can still scroll. */}
+                    <div key={activeTab} className="absolute inset-0 overflow-y-auto animate-fade-in-fast">
                         {children}
                     </div>
                 </main>
