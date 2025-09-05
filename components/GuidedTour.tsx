@@ -142,11 +142,11 @@ const GuidedTour: React.FC<GuidedTourProps> = ({ onClose }) => {
     <div className="absolute inset-0 z-[10000] animate-fade-in">
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={onClose}></div>
       <div
-        className="absolute border-2 border-cyan-400 rounded-lg shadow-2xl shadow-cyan-500/50 transition-all duration-300 pointer-events-none"
+        className="absolute border-2 border-cyan-400 rounded-lg shadow-2xl shadow-cyan-500/50 transition-all pointer-events-none"
         style={highlightStyle}
       ></div>
       <div
-        className="absolute w-[300px] bg-gray-800 rounded-lg shadow-xl p-5 transition-all duration-300 text-center"
+        className="absolute w-[300px] bg-gray-800 rounded-lg shadow-xl p-5 transition-all text-center"
         style={tooltipStyle}
       >
         <h3 className="font-bold text-lg text-cyan-400 mb-2">{currentStep.title}</h3>

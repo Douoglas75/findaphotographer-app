@@ -177,17 +177,6 @@ const App: React.FC = () => {
 
   return (
     <>
-      <style>{`
-        .animate-fade-in-up { animation: fadeInUp 0.5s ease-out forwards; }
-        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-        .animate-fade-in { animation: fadeIn 0.5s ease-out forwards; }
-        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-        .tour-highlight-active {
-          position: relative;
-          z-index: 11000;
-        }
-      `}</style>
-      
       <Layout>
         {renderContent()}
       </Layout>

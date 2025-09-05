@@ -30,7 +30,7 @@ const UserProfileCard: React.FC<UserProfileCardProps> = ({ user, onSelect }) => 
   return (
     <div
       onClick={() => onSelect(user)}
-      className="relative bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 cursor-pointer border border-gray-700 hover:border-cyan-500/50"
+      className="relative bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-cyan-500/20 transition-all cursor-pointer border border-gray-700 hover:border-cyan-500/50"
     >
        <button
         onClick={handleFavoriteClick}

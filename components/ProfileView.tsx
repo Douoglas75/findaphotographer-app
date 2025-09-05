@@ -274,8 +274,8 @@ const ProfileView: React.FC = () => {
       </div>
       
       {isAvatarOptionsOpen && (
-        <div className="absolute inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 p-4" onClick={() => setIsAvatarOptionsOpen(false)}>
-            <div className="bg-gray-800 rounded-2xl w-full max-w-sm p-6" onClick={(e) => e.stopPropagation()}>
+        <div className="absolute inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 p-4 animate-fade-in" onClick={() => setIsAvatarOptionsOpen(false)}>
+            <div className="bg-gray-800 rounded-2xl w-full max-w-sm p-6 animate-scale-in" onClick={(e) => e.stopPropagation()}>
                 <h3 className="text-lg font-bold text-center text-white mb-4">Changer la photo de profil</h3>
                 <div className="space-y-3">
                     <button

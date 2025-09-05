@@ -151,7 +151,7 @@ const MapView: React.FC = () => {
     return (
         <button
             onClick={() => setActiveFilter(filter)}
-            className={`px-4 py-1.5 text-sm font-semibold rounded-full whitespace-nowrap transition-colors duration-200 ${
+            className={`px-4 py-1.5 text-sm font-semibold rounded-full whitespace-nowrap transition-colors ${
                 isActive
                     ? 'bg-cyan-500 text-white shadow'
                     : 'bg-gray-800/60 text-gray-300 hover:bg-gray-700/80'
